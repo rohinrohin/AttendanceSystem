@@ -13,17 +13,17 @@
  ==============================================
  */
 
-var GT511C3 = require('gt511c3');
+var GT511C3 = require('gt-511c3');
 var async = require('async');
 var fs = require('fs');
 
-var fps = new GT511C3('/dev/ttyS1', {
-	baudrate: 115200
+var fps = new GT511C3('/dev/ttyS0', {
+	//baudrate: 115200
 	//baudrate: 57600,
 	//baudrate: 38400,
 	//baudrate: 19200,
-	//baudrate: 9600,
-	//debug: true
+	baudrate: 9600,
+	debug: true
 });
 
 var ID_TO_USE = 199;
